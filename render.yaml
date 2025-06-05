@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: event-planning-assistant
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    autoDeploy: true
+
