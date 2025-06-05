@@ -12,4 +12,5 @@ requests-oauthlib==2.0.0
 python-dotenv==1.0.1
 schedule==1.2.2
 twilio==9.4.4
+gunicorn==21.2.0
 
