@@ -3,7 +3,7 @@ services:
     name: event-planning-assistant
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    buildCommand: pip install -r Event_Plan/requirements.txt
+    startCommand: gunicorn Event_Plan.app:app
     autoDeploy: true
 
