@@ -3,7 +3,7 @@ services:
     name: event-planning-assistant
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn Event_Plan.app:app"
+    startCommand: "gunicorn app:app"
 
     envVars:
       - key: FLASK_ENV
