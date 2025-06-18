@@ -2,8 +2,9 @@ services:
   - type: web
     name: event-planning-assistant
     env: python
-    plan: free
-    buildCommand: pip install -r Event_Plan/requirements.txt
-    startCommand: gunicorn Event_Plan.app:app
-    autoDeploy: true
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn Event_Plan.app:app"
+    envVars:
+      - key: FLASK_ENV
+        value: production
 
